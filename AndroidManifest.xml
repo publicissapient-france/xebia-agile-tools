@@ -20,6 +20,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".PockerCardsActivity"
+                  android:screenOrientation ="portrait"
+                  android:label				="@string/pockerCardsTitle"
+                ></activity>
+        <activity android:name=".ShowCardActivity"></activity>
+
     </application>
 
 </manifest>
