@@ -20,11 +20,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PockerCardsActivity"
+        <activity android:name=".planingpocker.PockerCardsActivity"
                   android:screenOrientation ="portrait"
                   android:label				="@string/pockerCardsTitle"
                 ></activity>
-        <activity android:name=".ShowCardActivity"></activity>
+        <activity android:name=".planingpocker.ShowCardActivity"></activity>
 
     </application>
 

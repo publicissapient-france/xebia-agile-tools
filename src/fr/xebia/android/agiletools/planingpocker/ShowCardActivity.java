@@ -1,8 +1,9 @@
-package fr.xebia.android.agiletools;
+package fr.xebia.android.agiletools.planingpocker;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ImageView;
+import fr.xebia.android.agiletools.R;
 
 public class ShowCardActivity extends Activity {
     @Override

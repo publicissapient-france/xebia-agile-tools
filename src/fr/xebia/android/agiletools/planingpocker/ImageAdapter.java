@@ -1,4 +1,4 @@
-package fr.xebia.android.agiletools;
+package fr.xebia.android.agiletools.planingpocker;
 
 import android.content.Context;
 import android.view.View;
@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
+import fr.xebia.android.agiletools.R;
 
 public class ImageAdapter extends BaseAdapter {
    private Context mContext;
@@ -18,7 +19,7 @@ public class ImageAdapter extends BaseAdapter {
            R.drawable.ic_launcher, R.drawable.ic_launcher,
            R.drawable.ic_launcher, R.drawable.ic_launcher,
            R.drawable.ic_launcher, R.drawable.ic_launcher,
-           R.drawable.ic_launcher, R.drawable.ic_launcher
+           R.drawable.ic_launcher
    };
 
    // Constructor
