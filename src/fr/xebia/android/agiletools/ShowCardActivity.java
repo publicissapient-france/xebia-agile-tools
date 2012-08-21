@@ -1,13 +1,18 @@
 package fr.xebia.android.agiletools;
 
 import android.app.Activity;
+import android.os.Bundle;
+import android.widget.ImageView;
 
-/**
- * Created with IntelliJ IDEA.
- * User: dahlia
- * Date: 06/08/12
- * Time: 23:24
- * To change this template use File | Settings | File Templates.
- */
-public class ShowCardActivity extends Activity{
+public class ShowCardActivity extends Activity {
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.show_pocker_card);
+
+        int resId = getIntent().getExtras().getInt("id");
+
+        ImageView imageView = (ImageView) findViewById(R.id.imageview);
+        imageView.setImageResource(resId);
+    }
 }

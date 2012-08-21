@@ -16,3 +16,7 @@ gen/
 local.properties
 .classpath
 .project
+
+#intelliJ conf
+.idea
+*.iml
