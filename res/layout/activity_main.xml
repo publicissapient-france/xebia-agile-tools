@@ -1,18 +1,30 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="50dp"
+                android:padding="10dp">
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/choose_tool"
-            tools:context=".MainActivity"/>
+            android:textSize="16sp"
+            tools:context=".MainActivity"
+            android:paddingBottom="10dp"/>
     <Button
             android:id="@+id/pockerplanningBtn"
             android:text="@string/pockerCardsTitle"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
             android:src="@drawable/ic_launcher"/>
-</RelativeLayout>
+    <Button
+            android:id="@+id/chronometerBtn"
+            android:text="@string/chronometerTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_launcher"/>
+
+</LinearLayout>

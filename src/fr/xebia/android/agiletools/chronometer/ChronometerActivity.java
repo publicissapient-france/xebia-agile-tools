@@ -45,24 +45,7 @@ public class ChronometerActivity extends Activity {
                 mChronometer.setBase(SystemClock.elapsedRealtime());
             }
         });
-
-
     }
-
-
-/*
-        View.OnClickListener mSetFormatListener = new OnClickListener() {
-            public void onClick(View v) {
-                mChronometer.setFormat("Formatted time (%s)");
-            }
-        };
-
-        View.OnClickListener mClearFormatListener = new OnClickListener() {
-            public void onClick(View v) {
-                mChronometer.setFormat(null);
-            }
-        };
-*/
 }
 
 
