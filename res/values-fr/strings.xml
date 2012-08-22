@@ -5,6 +5,5 @@
     <string name="menu_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="pockerCardsTitle">Planning Pocker</string>
-    <string name="chronometerTitle">Chronometer</string>
-
+    <string name="chronometerTitle">Chronomètre</string>
 </resources>

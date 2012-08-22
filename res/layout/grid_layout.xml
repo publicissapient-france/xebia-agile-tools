@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:useDefaultMargins="true"
+        android:alignmentMode="alignBounds"
+        android:rowOrderPreserved="false"
+
+        android:columnCount="3"
+        >
+    <ImageView
+            android:id="@+id/card1"
+            android:src="@drawable/ic_launcher"
+            android:layout_gravity="fill_horizontal"
+            />
+    <ImageView
+            android:id="@+id/card2"
+            android:src="@drawable/ic_launcher"
+            android:layout_gravity="fill_horizontal"
+            />
+    <ImageView
+            android:id="@+id/card3"
+            android:src="@drawable/ic_launcher"
+            android:layout_gravity="fill_horizontal"
+            />
+    <ImageView
+            android:id="@+id/card4"
+            android:src="@drawable/ic_launcher"
+            android:layout_gravity="fill_horizontal"
+
+
+            />
+    <ImageView
+            android:id="@+id/card5"
+            android:src="@drawable/ic_launcher"
+
+
+            />
+    <ImageView
+            android:id="@+id/card6"
+            android:src="@drawable/ic_launcher"
+
+
+
+            />
+    <ImageView
+            android:id="@+id/card7"
+            android:src="@drawable/ic_launcher"
+
+
+
+            />
+
+ </GridLayout>
