@@ -21,11 +21,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".planingpocker.PockerCardsActivity"
+        <activity android:name=".planningpoker.PokerCardsActivity"
                   android:label="@string/pockerCardsTitle"
                 ></activity>
 
-        <activity android:name=".planingpocker.ShowCardActivity"></activity>
+        <activity android:name=".planningpoker.ShowCardActivity"></activity>
 
         <activity android:name=".chronometer.ChronometerActivity"
                   android:label="@string/chronometerTitle"

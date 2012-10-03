@@ -1,4 +1,4 @@
-package fr.xebia.android.agiletools.planingpocker;
+package fr.xebia.android.agiletools.planningpoker;
 
 import android.content.Context;
 import android.view.View;
