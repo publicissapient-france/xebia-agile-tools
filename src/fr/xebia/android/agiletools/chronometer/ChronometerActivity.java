@@ -8,43 +8,50 @@ import android.widget.Button;
 import android.widget.Chronometer;
 import fr.xebia.android.agiletools.R;
 
-
-public class ChronometerActivity extends Activity {
+public class ChronometerActivity extends Activity implements View.OnClickListener {
     private Chronometer mChronometer;
+    private Button startBtn;
+    private Button stopBtn;
+    private Button resetBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.chronometer);
 
+        initComponents();
+    }
 
+    private void initComponents() {
         mChronometer = (Chronometer) findViewById(R.id.chronometer);
-        Button startBtn = (Button) findViewById(R.id.startbtn);
-        startBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+
+        startBtn = (Button) findViewById(R.id.startBtn);
+        startBtn.setOnClickListener(this);
+
+        stopBtn = (Button) findViewById(R.id.stopBtn);
+        stopBtn.setOnClickListener(this);
+
+        resetBtn = (Button) findViewById(R.id.resetBtn);
+        resetBtn.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.startBtn:
                 mChronometer.start();
-            }
-        });
-
-
-        Button stopBtn = (Button) findViewById(R.id.stopbtn);
-        stopBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+                startBtn.setVisibility(View.GONE);
+                stopBtn.setVisibility(View.VISIBLE);
+                break;
+            case R.id.stopBtn:
+                stopBtn.setVisibility(View.GONE);
+                startBtn.setVisibility(View.VISIBLE);
                 mChronometer.stop();
-            }
-        });
-
-
-        Button resetBtn = (Button) findViewById(R.id.resetbtn);
-        resetBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+                break;
+            case R.id.resetBtn:
                 mChronometer.setBase(SystemClock.elapsedRealtime());
-            }
-        });
+                break;
+        }
     }
 }
 

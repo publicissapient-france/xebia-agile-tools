@@ -7,28 +7,31 @@
               android:layout_margin="50dp"
               android:padding="10dp">
 
-<Button
-            android:id="@+id/startbtn"
+    <Button
+            android:id="@+id/startBtn"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Start"
+            android:text="@string/chrono_start"
+            style="@style/RoundedButton"
             />
     <Button
-            android:id="@+id/stopbtn"
+            android:id="@+id/stopBtn"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Stop"
+            android:text="@string/chrono_stop"
+            style="@style/RoundedButton"
+            android:visibility="gone"
             />
     <Button
-            android:id="@+id/resetbtn"
+            android:id="@+id/resetBtn"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Reset"
+            android:text="@string/chrono_reset"
+            style="@style/RoundedButton"
             />
 
     <Chronometer
             android:id="@+id/chronometer"
-            android:layout_centerHorizontal="true"
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
             android:textSize="40sp"
