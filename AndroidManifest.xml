@@ -22,7 +22,7 @@
         </activity>
 
         <activity android:name=".planningpoker.PokerCardsActivity"
-                  android:label="@string/pockerCardsTitle"
+                  android:label="@string/pokerCardsTitle"
                 ></activity>
 
         <activity android:name=".planningpoker.ShowCardActivity"></activity>

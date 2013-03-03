@@ -13,8 +13,8 @@
             tools:context=".MainActivity"
             android:paddingBottom="10dp"/>
     <Button
-            android:id="@+id/pockerplanningBtn"
-            android:text="@string/pockerCardsTitle"
+            android:id="@+id/pokerplanningBtn"
+            android:text="@string/pokerCardsTitle"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"

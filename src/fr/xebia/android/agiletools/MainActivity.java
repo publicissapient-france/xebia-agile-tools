@@ -11,15 +11,14 @@ import fr.xebia.android.agiletools.planningpoker.PokerCardsActivity;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
-	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
+
         setContentView(R.layout.activity_main);
-        
-        Button pockerPlanningBtn = (Button) findViewById(R.id.pockerplanningBtn);
-        pockerPlanningBtn.setOnClickListener(this);
+
+        Button pokerPlanningBtn = (Button) findViewById(R.id.pokerplanningBtn);
+        pokerPlanningBtn.setOnClickListener(this);
 
         Button chronometerBtn = (Button) findViewById(R.id.chronometerBtn);
         chronometerBtn.setOnClickListener(this);
@@ -35,7 +34,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     public void onClick(View view) {
         Intent intent;
         switch (view.getId()) {
-            case R.id.pockerplanningBtn:
+            case R.id.pokerplanningBtn:
                 intent = new Intent(getApplicationContext(), PokerCardsActivity.class);
                 startActivity(intent);
                 break;
@@ -45,5 +44,5 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
         }
     }
-    
+
 }
