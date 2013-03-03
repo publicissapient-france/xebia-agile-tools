@@ -1,40 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-              android:orientation="vertical"
-              android:layout_margin="50dp"
-              android:padding="10dp">
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_margin="30dp"
+        android:padding="10dp">
 
     <Button
             android:id="@+id/startBtn"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/chrono_start"
-            style="@style/RoundedButton"
-            />
+            android:background="@drawable/btn_green"
+            style="@style/RoundedButton"/>
     <Button
             android:id="@+id/stopBtn"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/chrono_stop"
+            android:background="@drawable/btn_red"
             style="@style/RoundedButton"
-            android:visibility="gone"
-            />
+            android:visibility="gone"/>
     <Button
             android:id="@+id/resetBtn"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/chrono_reset"
-            style="@style/RoundedButton"
-            />
+            android:background="@drawable/btn_grey"
+            style="@style/RoundedButton"/>
 
-    <Chronometer
-            android:id="@+id/chronometer"
-            android:layout_width="match_parent"
-            android:layout_height="fill_parent"
-            android:textSize="40sp"
-            android:textStyle="bold"
-            />
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+        <ImageView
+                android:id="@+id/imgStatus"
+                android:contentDescription="@string/chrono_imgStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pause"/>
+
+        <Chronometer
+                android:id="@+id/chronometer"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                android:paddingTop="5dp"/>
+
+    </LinearLayout>
+
 </LinearLayout>
