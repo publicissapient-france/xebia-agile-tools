@@ -1,30 +1,55 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_margin="50dp"
-                android:padding="10dp">
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/choose_tool"
-            android:textSize="16sp"
-            tools:context=".MainActivity"
-            android:paddingBottom="10dp"/>
-    <Button
-            android:id="@+id/pokerplanningBtn"
-            android:text="@string/pokerCardsTitle"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/ic_launcher"/>
-    <Button
-            android:id="@+id/chronometerBtn"
-            android:text="@string/chronometerTitle"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/ic_launcher"/>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
 
-</LinearLayout>
+    <LinearLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="30dp"
+            android:padding="10dp">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_tool"
+                android:textSize="18sp"
+                tools:context=".MainActivity"
+                android:paddingBottom="10dp"/>
+        <Button
+                android:id="@+id/pokerplanningBtn"
+                android:text="@string/pokerCardsTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher"
+                android:background="@drawable/btn_purple"
+                style="@style/RoundedButton"/>
+        <Button
+                android:id="@+id/chronometerBtn"
+                android:text="@string/chronometerTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher"
+                android:background="@drawable/btn_purple"
+                style="@style/RoundedButton"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:background="@drawable/bg_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="right">
+        <ImageView
+                android:src="@drawable/xebia"
+                android:contentDescription="@string/xebia_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+    </RelativeLayout>
+
+</RelativeLayout>
