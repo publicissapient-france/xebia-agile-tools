@@ -7,21 +7,31 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import fr.xebia.android.agiletools.chronometer.ChronometerActivity;
+import fr.xebia.android.agiletools.moobox.MooBoxActivity;
 import fr.xebia.android.agiletools.planningpoker.PokerCardsActivity;
 
 public class MainActivity extends Activity implements View.OnClickListener {
+    private Button pokerPlanningBtn;
+    private Button chronometerBtn;
+    private Button mooBoxBtn;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
 
-        Button pokerPlanningBtn = (Button) findViewById(R.id.pokerplanningBtn);
+        initComponents();
+    }
+
+    private void initComponents() {
+        pokerPlanningBtn = (Button) findViewById(R.id.pokerplanningBtn);
         pokerPlanningBtn.setOnClickListener(this);
 
-        Button chronometerBtn = (Button) findViewById(R.id.chronometerBtn);
+        chronometerBtn = (Button) findViewById(R.id.chronometerBtn);
         chronometerBtn.setOnClickListener(this);
+
+        mooBoxBtn = (Button) findViewById(R.id.mooboxBtn);
+        mooBoxBtn.setOnClickListener(this);
     }
 
     @Override
@@ -40,6 +50,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
             case R.id.chronometerBtn:
                 intent = new Intent(getApplicationContext(), ChronometerActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.mooboxBtn:
+                intent = new Intent(getApplicationContext(), MooBoxActivity.class);
                 startActivity(intent);
                 break;
         }

@@ -14,4 +14,7 @@
     <string name="chrono_reset">Reset</string>
     <string name="chrono_imgStatus">Chronometer status</string>
 
+    <string name="mooboxTitle">Moo Box</string>
+    <string name="moobox_say">Say moo !</string>
+
 </resources>
