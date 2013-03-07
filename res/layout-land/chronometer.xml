@@ -20,40 +20,51 @@
 
     <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:layout_margin="30dp"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:weightSum="100"
+            android:baselineAligned="false">
 
-        <Button
-                android:id="@+id/startBtn"
-                android:text="@string/chrono_start"
-                android:background="@drawable/btn_green"
-                style="@style/RoundedButton"/>
-        <Button
-                android:id="@+id/stopBtn"
-                android:text="@string/chrono_stop"
-                android:background="@drawable/btn_red"
-                style="@style/RoundedButton"
-                android:visibility="gone"/>
-        <Button
-                android:id="@+id/resetBtn"
-                android:text="@string/chrono_reset"
-                android:background="@drawable/btn_grey"
-                style="@style/RoundedButton"/>
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="50">
+
+            <Button
+                    android:id="@+id/startBtn"
+                    android:text="@string/chrono_start"
+                    android:background="@drawable/btn_green"
+                    style="@style/RoundedButton"/>
+            <Button
+                    android:id="@+id/stopBtn"
+                    android:text="@string/chrono_stop"
+                    android:background="@drawable/btn_red"
+                    style="@style/RoundedButton"
+                    android:visibility="gone"/>
+            <Button
+                    android:id="@+id/resetBtn"
+                    android:text="@string/chrono_reset"
+                    android:background="@drawable/btn_grey"
+                    style="@style/RoundedButton"/>
+
+        </LinearLayout>
 
         <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp">
+                android:layout_height="fill_parent"
+                android:layout_weight="50">
 
             <ImageView
                     android:id="@+id/imgStatus"
                     android:contentDescription="@string/chrono_imgStatus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/pause"/>
+                    android:src="@drawable/pause"
+                    android:layout_gravity="center_vertical"/>
 
             <Chronometer
                     android:id="@+id/chronometer"
@@ -61,7 +72,8 @@
                     android:layout_height="fill_parent"
                     android:textSize="45sp"
                     android:textStyle="bold"
-                    android:paddingTop="5dp"/>
+                    android:paddingTop="5dp"
+                    android:gravity="center_vertical"/>
 
         </LinearLayout>
 
