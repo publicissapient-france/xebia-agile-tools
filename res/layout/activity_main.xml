@@ -6,6 +6,20 @@
         android:layout_height="match_parent"
         >
 
+    <RelativeLayout
+            android:background="@drawable/bg_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="right">
+        <ImageView
+                android:src="@drawable/xebia"
+                android:contentDescription="@string/xebia_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+    </RelativeLayout>
+
     <LinearLayout
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
@@ -47,19 +61,5 @@
                 style="@style/RoundedButton"/>
 
     </LinearLayout>
-
-    <RelativeLayout
-            android:background="@drawable/bg_menu"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:gravity="right">
-        <ImageView
-                android:src="@drawable/xebia"
-                android:contentDescription="@string/xebia_logo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                />
-    </RelativeLayout>
 
 </RelativeLayout>

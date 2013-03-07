@@ -13,8 +13,10 @@
     <string name="chrono_stop">Stop</string>
     <string name="chrono_reset">Reset</string>
     <string name="chrono_imgStatus">Chronometer status</string>
+    <string name="chrono_image">Chronometer image</string>
 
     <string name="mooboxTitle">Moo Box</string>
     <string name="moobox_say">Say moo !</string>
+    <string name="moobox_image">Cow image</string>
 
 </resources>
