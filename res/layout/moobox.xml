@@ -28,8 +28,6 @@
 
         <Button
                 android:id="@+id/saymooBtn"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
                 android:text="@string/moobox_say"
                 android:background="@drawable/btn_grey"
                 style="@style/RoundedButton"/>

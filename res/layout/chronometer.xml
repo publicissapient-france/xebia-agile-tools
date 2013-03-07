@@ -28,23 +28,17 @@
 
         <Button
                 android:id="@+id/startBtn"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
                 android:text="@string/chrono_start"
                 android:background="@drawable/btn_green"
                 style="@style/RoundedButton"/>
         <Button
                 android:id="@+id/stopBtn"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
                 android:text="@string/chrono_stop"
                 android:background="@drawable/btn_red"
                 style="@style/RoundedButton"
                 android:visibility="gone"/>
         <Button
                 android:id="@+id/resetBtn"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
                 android:text="@string/chrono_reset"
                 android:background="@drawable/btn_grey"
                 style="@style/RoundedButton"/>

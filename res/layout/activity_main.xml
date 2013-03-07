@@ -38,24 +38,18 @@
         <Button
                 android:id="@+id/pokerplanningBtn"
                 android:text="@string/pokerCardsTitle"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
                 android:src="@drawable/ic_launcher"
                 android:background="@drawable/btn_purple"
                 style="@style/RoundedButton"/>
         <Button
                 android:id="@+id/chronometerBtn"
                 android:text="@string/chronometerTitle"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
                 android:src="@drawable/ic_launcher"
                 android:background="@drawable/btn_purple"
                 style="@style/RoundedButton"/>
         <Button
                 android:id="@+id/mooboxBtn"
                 android:text="@string/mooboxTitle"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
                 android:src="@drawable/ic_launcher"
                 android:background="@drawable/btn_purple"
                 style="@style/RoundedButton"/>
