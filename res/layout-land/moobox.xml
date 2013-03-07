@@ -21,15 +21,18 @@
     <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:layout_margin="30dp"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:weightSum="100">
 
         <Button
                 android:id="@+id/saymooBtn"
                 android:text="@string/moobox_say"
                 android:background="@drawable/btn_grey"
-                style="@style/RoundedButton"/>
+                style="@style/RoundedButton"
+                android:layout_width="0dp"
+                android:layout_weight="50"/>
 
     </LinearLayout>
 
