@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <RelativeLayout
+            android:background="@drawable/bg_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="right">
+        <ImageView
+                android:src="@drawable/xebia"
+                android:contentDescription="@string/xebia_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+    </RelativeLayout>
+
+    <LinearLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="30dp"
+            android:padding="10dp">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_tool"
+                android:textSize="18sp"
+                tools:context=".MainActivity"
+                android:paddingBottom="10dp"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:weightSum="100">
+            <Button
+                    android:id="@+id/pokerplanningBtn"
+                    android:text="@string/pokerCardsTitle"
+                    android:src="@drawable/ic_launcher"
+                    android:background="@drawable/btn_purple"
+                    style="@style/RoundedButton"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="33"/>
+            <Button
+                    android:id="@+id/chronometerBtn"
+                    android:text="@string/chronometerTitle"
+                    android:src="@drawable/ic_launcher"
+                    android:background="@drawable/btn_purple"
+                    style="@style/RoundedButton"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="33"/>
+            <Button
+                    android:id="@+id/mooboxBtn"
+                    android:text="@string/mooboxTitle"
+                    android:src="@drawable/ic_launcher"
+                    android:background="@drawable/btn_purple"
+                    style="@style/RoundedButton"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="33"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
